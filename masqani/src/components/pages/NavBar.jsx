@@ -1,17 +1,21 @@
 // import { NavLink } from "react-router-dom";
+import { Nav, Navbar } from 'react-bootstrap';
 
 function NavBar (){
     return(
-        <div className="nav">
-            <h1>MasQani heights</h1>
-            <ul>
-            <a href="/home">Home</a>
-            <a href="/about">About</a>
-            <a href="/services">Services</a>
-            <a href="/contacts">Contacts</a>
-            <a href="/pricing">Pricing</a>
-            </ul>
-        </div>
+        <fragment>
+        {/* className="flex-column"  */}
+        <Nav>
+          <ul>
+          <Nav.Link href="/home">Home</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="/services">Services</Nav.Link>
+          <Nav.Link href="/contacts">Contacts</Nav.Link>
+          <Nav.Link href="/pricing">Pricing</Nav.Link>
+          </ul>
+          </Nav>
+     
+      </fragment>
     )
 }
 
