@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(204, 237, 243);
+}
+.nav{
+    color: rgb(7, 7, 7);
+    background-color: rgba(138, 194, 226, 0.589);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 15px;
+}
+
+ul{
+    padding: 0 10px;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    padding-right: 40px;
+    color: rgba(9, 87, 233, 0.63);
+    
+}
