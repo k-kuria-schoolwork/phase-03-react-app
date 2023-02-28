@@ -1,26 +1,22 @@
-
+import React from "react";
 import './App.css';
-import 
+ 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="App">
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Home />}>Home</Route>
+        <Route  exact path="/about" element={<About />}>About</Route>
+        <Route exact path="/services" element={<Services />}>Services</Route>
+        <Route exact path="/pricing" element={<Pricing />}>pricing</Route>
+        <Route exact path="/contacts" element={<Contacts />}>Contacts</Route>
+      </Routes>
     </div>
-  );
+    </div>
+  )
 }
 
 export default App;
