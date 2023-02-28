@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+
+
 function NavBar (){
     retrurn(
         <div>
@@ -12,3 +15,5 @@ function NavBar (){
         </div>
     )
 }
+
+export default  NavBar
